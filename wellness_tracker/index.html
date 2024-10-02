@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Tracker</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>The Wellness Tracker</h1>
+
+    <div id="newProfile">
+        <p>Please complete your emotional profile.</p>
+        <form>
+            <label>First: <input type="text" name="first" required></label>
+            <label>Last: <input type="text" name="last" required></label>
+            <label>Emotional State:<select id="physical">
+<option value="https://openmoji.org/data/color/svg/1F604.svg">happy</option>
+<option value="https://openmoji.org/data/color/svg/1F625.svg">sad</option>
+<option value="https://openmoji.org/data/color/svg/1F634.svg">tired</option>
+<option value="https://openmoji.org/data/color/svg/1F611.svg">bored</option>
+            </select></label>
+            <input type="submit" value="Save Profile" id="saveProfile">
+        </form>
+    </div>
+    <!--between-->
+    <div id="myProfile">
+        <section>
+            <img src="" id="emoji">
+            <p><span id="first"></span> <span id="last"></span> is currently feeling <span id="emotion"> </span>.</p>
+        </section>
+        <button id="delProfile">Delete Profile</button>
+    </div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
